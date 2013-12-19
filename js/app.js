@@ -77,6 +77,11 @@ var work = [
 $(function () {
     $('#term').terminal(function (command, term) {
 
+            try {
+                _gaq.push(['_trackEvent', 'Command', command]);
+            } catch (err) {
+            }
+
             switch (command) {
                 case 'contact':
                     term.echo("\n" +

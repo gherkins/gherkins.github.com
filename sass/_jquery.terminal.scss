@@ -59,6 +59,7 @@ $line-height: 1.2em;
 .terminal-output > div {
   min-height: $line-height;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .terminal .terminal-output div span {
