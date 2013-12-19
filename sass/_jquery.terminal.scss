@@ -5,6 +5,10 @@
  * Copyright (c) 2011-2013 Jakub Jankiewicz <http://jcubic.pl>
  *
  */
+
+$font-size: 0.9em;
+$line-height: 1.2em;
+
 .terminal .terminal-output .format, .terminal .cmd .format,
 .terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div{
   display: inline-block;
@@ -27,7 +31,7 @@
 .cmd {
   padding: 0;
   margin: 0;
-  height: 1.2em;
+  height: $line-height;
   /*margin-top: 3px; */
 }
 .terminal .terminal-output div div, .terminal .prompt {
@@ -43,12 +47,12 @@
   font-family: Inconsolata, monospace;
   color: #aaa;
   background-color: #000;
-  font-size: 0.9em;
-  line-height: 1.2em;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 .terminal-output > div {
   /*padding-top: 3px;*/
-  min-height: 1.2em;
+  min-height: $line-height;
 }
 .terminal .terminal-output div span {
   display: inline-block;
