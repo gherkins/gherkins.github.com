@@ -7,7 +7,7 @@
  */
 
 $font-size: 0.9em;
-$line-height: 1.2em;
+$line-height: 1.3em;
 
 .terminal .terminal-output .format, .terminal .cmd .format,
 .terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div {
@@ -40,7 +40,7 @@ $line-height: 1.2em;
 
 .terminal .terminal-output div div, .terminal .prompt {
   display: block;
-  line-height: 1.3em;
+  line-height: $line-height;
   height: auto;
 }
 
@@ -57,13 +57,19 @@ $line-height: 1.2em;
 }
 
 .terminal-output > div {
-  min-height: $line-height;
+//  min-height: $line-height;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .terminal .terminal-output div span {
   display: inline-block;
+
+  &.blank,
+  &.filled{
+    font-size: 0.8em;
+  }
+
 }
 
 .terminal .cmd span {

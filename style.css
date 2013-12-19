@@ -25,17 +25,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .terminal { padding: 0 10px; position: relative; overflow: hidden; }
 
-.cmd { padding: 0; margin: 0; height: 1.2em; }
+.cmd { padding: 0; margin: 0; height: 1.3em; }
 
 .terminal .terminal-output div div, .terminal .prompt { display: block; line-height: 1.3em; height: auto; }
 
 .terminal .prompt { float: left; }
 
-.terminal { font-family: Inconsolata, monospace; color: #aaa; background-color: #000; font-size: 0.9em; line-height: 1.2em; }
+.terminal { font-family: Inconsolata, monospace; color: #aaa; background-color: #000; font-size: 0.9em; line-height: 1.3em; }
 
-.terminal-output > div { min-height: 1.2em; white-space: nowrap; overflow: hidden; }
+.terminal-output > div { white-space: nowrap; overflow: hidden; }
 
 .terminal .terminal-output div span { display: inline-block; }
+.terminal .terminal-output div span.blank, .terminal .terminal-output div span.filled { font-size: 0.8em; }
 
 .terminal .cmd span { float: left; }
 
