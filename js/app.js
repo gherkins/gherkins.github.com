@@ -42,30 +42,43 @@ function greetings() {
     return output;
 }
 
+function log(command) {
+    try {
+        _gaq.push(['_trackEvent', 'Command', command]);
+    } catch (err) {
+    }
+}
+
 $(function () {
     $('#term').terminal(
         {
             email: function () {
+                log('email');
                 this.echo("maxgirkens@gmail.com");
             },
 
             github: function () {
+                log('github');
                 this.echo("https://github.com/gherkins");
             },
 
             blog: function () {
+                log('blog');
                 this.echo("http://nerdpress.org/author/max-girkens/");
             },
 
             twitter: function () {
+                log('twitter');
                 this.echo("https://twitter.com/mgherkins");
             },
 
             cv: function () {
+                log('cv');
                 this.echo("http://careers.stackoverflow.com/gherkins");
             },
 
             recentwork: function () {
+                log('recentwork');
                 var self = this;
                 $.each(
                     {
@@ -81,6 +94,7 @@ $(function () {
             },
 
             clear: function () {
+                log('clear');
                 this.clear();
                 this.echo(greetings());
             }
