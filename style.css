@@ -25,7 +25,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .terminal { padding: 0 10px; position: relative; overflow: hidden; }
 
-.cmd { padding: 0; margin: 0; height: 1.2em; /*margin-top: 3px; */ }
+.cmd { padding: 0; margin: 0; height: 1.2em; }
 
 .terminal .terminal-output div div, .terminal .prompt { display: block; line-height: 1.3em; height: auto; }
 
@@ -33,11 +33,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .terminal { font-family: Inconsolata, monospace; color: #aaa; background-color: #000; font-size: 0.9em; line-height: 1.2em; }
 
-.terminal-output > div { /*padding-top: 3px;*/ min-height: 1.2em; }
+.terminal-output > div { min-height: 1.2em; white-space: nowrap; }
 
 .terminal .terminal-output div span { display: inline-block; }
 
-.terminal .cmd span { float: left; /*display: inline-block; */ }
+.terminal .cmd span { float: left; }
 
 .terminal .cmd span.inverted { background-color: #aaa; color: #000; }
 
