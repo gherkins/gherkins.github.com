@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .cmd > .clipboard { position: fixed; }
 
-.terminal { padding: 10px; position: relative; overflow: hidden; }
+.terminal { padding: 0 10px; position: relative; overflow: hidden; }
 
 .cmd { padding: 0; margin: 0; height: 1.2em; /*margin-top: 3px; */ }
 
