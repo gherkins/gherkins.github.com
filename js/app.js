@@ -48,27 +48,36 @@ $(function () {
 
         function (command, term) {
 
-            try {
-                _gaq.push(['_trackEvent', 'Command', command]);
-            } catch (err) {
+            //log
+            if (command.trim() != '') {
+                try {
+                    _gaq.push(['_trackEvent', 'Command', command]);
+                } catch (err) {
+                }
             }
 
             switch (command) {
+
                 case 'email':
                     term.echo("maxgirkens@gmail.com");
                     break;
+
                 case 'github':
                     term.echo("https://github.com/gherkins");
                     break;
+
                 case 'blog':
                     term.echo("http://nerdpress.org/author/max-girkens/");
                     break;
+
                 case 'twitter':
                     term.echo("https://twitter.com/mgherkins");
                     break;
+
                 case 'cv':
                     term.echo("http://careers.stackoverflow.com/gherkins");
                     break;
+
                 case 'recentwork':
                     $.each(
                         {
@@ -82,6 +91,7 @@ $(function () {
                             term.echo(date + ": " + link);
                         });
                     break;
+
                 case 'clear':
                     term.clear();
                     term.echo(greetings());
@@ -95,6 +105,7 @@ $(function () {
                         term.echo(command + ": command not found");
                     }
                     break;
+
             }
 
         },
