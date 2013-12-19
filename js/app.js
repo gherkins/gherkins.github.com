@@ -37,91 +37,61 @@ function greetings() {
     });
 
     output += "\n" +
-        "commands: work, cv, contact\n";
+        "commands: recentwork, cv, email, github, blog, twitter\n";
 
     return output;
 }
 
-var work = [
-    {
-        date: "10/2013",
-        name: "Weihnachtskarten Designer",
-        desc: "design tool for christmas cards",
-        tech: "Silex, HTML5, JS",
-        link: "http://weihnachtskarten-designer.net/"
-    },
-    {
-        date: "7/2013",
-        name: "Eco Weihnachtskarten",
-        desc: "online shop for christmas cards",
-        tech: "Silverstripe, PHP, compass css",
-        link: "http://eco-weihnachtskarten.de"
-    },
-    {
-        date: "4/2013",
-        name: "MPC-Chord-Finder",
-        desc: "drumcomputer harmonics",
-        tech: "idea, CSS3, jQuery, music.js",
-        link: "http://web-development.cc/mpc-chordfinder/"
-    },
-    {
-        date: "4/2013",
-        name: "mashcloud.net",
-        desc: "collaborative web audio mashup",
-        tech: "idea, node.js. socket.io, backbone.js",
-        link: "http://mashcloud.net/"
-    }
-];
-
-
 $(function () {
-    $('#term').terminal(function (command, term) {
-
-            try {
-                _gaq.push(['_trackEvent', 'Command', command]);
-            } catch (err) {
-            }
-
-            switch (command) {
-                case 'contact':
-                    term.echo("\n" +
-                        "email:   maxgirkens@gmail.com\n" +
-                        "twitter: https://twitter.com/mgherkins\n" +
-                        "blog:    http://nerdpress.org/author/max-girkens/\n" +
-                        "github:  https://github.com/gherkins " +
-                        "\n");
-                    break;
-                case 'cv':
-                    term.echo("\n" +
-                        "CV: http://careers.stackoverflow.com/gherkins" +
-                        "\n");
-                    break;
-                case 'clear':
-                    term.clear();
-                    term.echo(greetings());
-                    break;
-                case 'work':
-
-                    var output = "\n";
-                    $.each(work, function () {
-                        output += this.name + " - " + this.desc + " " + this.date + "\n"
-                        output += this.tech + "\n";
-                        output += this.link + "\n\n";
-                    });
-
-                    output += "...more coming soon\n\n";
-
-                    term.echo(output);
-                    break;
-                default:
-                    term.echo(command + ': command not found');
-                    break;
-            }
-
-        },
+    $('#term').terminal(
         {
+            email: function () {
+                this.echo("maxgirkens@gmail.com");
+            },
+
+            github: function () {
+                this.echo("https://github.com/gherkins");
+            },
+
+            blog: function () {
+                this.echo("http://nerdpress.org/author/max-girkens/");
+            },
+
+            twitter: function () {
+                this.echo("https://twitter.com/mgherkins");
+            },
+
+            cv: function () {
+                this.echo("http://careers.stackoverflow.com/gherkins");
+            },
+
+            recentwork: function () {
+                var self = this;
+                $.each(
+                    {
+                        "10/2013": "http://weihnachtskarten-designer.net/",
+                        "07/2013": "http://eco-weihnachtskarten.de",
+                        "04/2013": "http://web-development.cc/mpc-chordfinder/",
+                        "01/2013": "http://mashcloud.net/",
+                        "03/2012": "http://web-development.cc/guitar-interval-trainer/"
+                    }
+                    , function (date, link) {
+                        self.echo(date + ": " + link);
+                    });
+            },
+
+            clear: function () {
+                this.clear();
+                this.echo(greetings());
+            }
+        },
+
+        {
+            checkArity: false,
+            processArguments: true,
             prompt: '>',
             clear: false,
-            greetings: greetings()
+            greetings: greetings(),
+            tabcompletion: true
         });
 });
