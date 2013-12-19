@@ -37,6 +37,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .terminal .terminal-output div span { display: inline-block; }
 .terminal .terminal-output div span.blank, .terminal .terminal-output div span.filled { font-size: 0.8em; }
+.terminal .terminal-output div span.filled { background: #67c5fd; }
 
 .terminal .cmd span { float: left; }
 

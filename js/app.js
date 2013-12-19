@@ -26,10 +26,10 @@ function greetings() {
         $.each(row, function (key, char) {
             switch (char) {
                 case 0:
-                    output += "[[;;#000;blank]  ]"
+                    output += "[[;;;blank]  ]"
                     break;
                 default:
-                    output += "[[;;#1ba9fc;filled]  ]";
+                    output += "[[;;;filled]  ]";
                     break;
             }
         });
