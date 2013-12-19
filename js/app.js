@@ -31,7 +31,7 @@ var work = [
     {
         date: "4/2013",
         name: "MPC-Chord-Finder",
-        desc: "drumcomputer harmonics finder",
+        desc: "drumcomputer harmonics",
         tech: "idea, CSS3, jQuery, music.js",
         link: "http://web-development.cc/mpc-chordfinder/"
     },
@@ -51,9 +51,10 @@ $(function () {
             switch (command) {
                 case 'contact':
                     term.echo("\n" +
-                        "email: maxgirkens@gmail.com\n" +
-                        "blog: http://nerdpress.org/author/max-girkens/\n" +
-                        "github: https://github.com/gherkins " +
+                        "email:   maxgirkens@gmail.com\n" +
+                        "twitter: https://twitter.com/mgherkins\n" +
+                        "blog:    http://nerdpress.org/author/max-girkens/\n" +
+                        "github:  https://github.com/gherkins " +
                         "\n");
                     break;
                 case 'cv':
@@ -85,7 +86,7 @@ $(function () {
             clear : false,
             greetings: function () {
 
-                var output = '\nMAX GIRKENS\n';
+                var output = '\nMax Girkens\n';
 
                 $.each(logo, function (key, row) {
                     $.each(row, function (key, char) {
@@ -102,7 +103,6 @@ $(function () {
                 });
 
                 output += "\n" +
-                    "welcome to my homepage\n" +
                     "commands: work, cv, contact\n";
 
                 return output;
