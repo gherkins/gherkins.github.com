@@ -63,6 +63,8 @@ function init() {
 
         function (command, term) {
 
+            command = command.toLowerCase();
+
             //log
             if (command.trim() != '') {
                 try {
