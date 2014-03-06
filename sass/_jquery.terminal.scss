@@ -6,9 +6,6 @@
  *
  */
 
-$font-size: 0.9em;
-$line-height: 1.3em;
-
 .terminal .terminal-output .format, .terminal .cmd .format,
 .terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div {
   display: inline-block;
@@ -32,15 +29,8 @@ $line-height: 1.3em;
   overflow: hidden;
 }
 
-.cmd {
-  padding: 0;
-  margin: 0;
-  height: $line-height;
-}
-
 .terminal .terminal-output div div, .terminal .prompt {
   display: block;
-  line-height: $line-height;
   height: auto;
 }
 
@@ -49,11 +39,7 @@ $line-height: 1.3em;
 }
 
 .terminal {
-  font-family: Inconsolata, monospace;
-  color: #aaa;
-  background-color: #000;
-  font-size: $font-size;
-  line-height: $line-height;
+  font-family: inherit;
 }
 
 .terminal-output > div {
@@ -61,37 +47,20 @@ $line-height: 1.3em;
   overflow: hidden;
 }
 
-.terminal .terminal-output div span {
-  display: inline-block;
-
-  &.blank,
-  &.filled{
-    font-size: 0.8em;
-  }
-  &.filled{
-    background: lighten(#1ba9fc, 15%);
-  }
-
-  &.h2{
-    font-size: 1.2em;
-  }
-
-}
-
 .terminal .cmd span {
   float: left;
 }
 
 .terminal .cmd span.inverted {
-  background-color: #aaa;
-  color: #000;
+//  background-color: #aaa;
+//  color: #000;
 }
 
 .terminal .terminal-output div div::-moz-selection,
 .terminal .terminal-output div span::-moz-selection,
 .terminal .terminal-output div div a::-moz-selection {
-  background-color: #aaa;
-  color: #000;
+//  background-color: #aaa;
+//  color: #000;
 }
 
 .terminal .terminal-output div div::selection,
@@ -99,19 +68,10 @@ $line-height: 1.3em;
 .terminal .terminal-output div span::selection,
 .terminal .cmd > span::selection,
 .terminal .prompt span::selection {
-  background-color: #aaa;
-  color: #000;
+//  background-color: #aaa;
+//  color: #000;
 }
 
 .clear {
   clear: both;
-}
-
-.terminal a {
-  color: #1ba9fc;
-  text-decoration: none;
-}
-
-.terminal a:hover {
-  text-decoration: underline;
 }

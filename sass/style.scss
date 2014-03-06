@@ -1,10 +1,45 @@
-@import "compass/reset";
 @import "compass/css3/opacity";
+@import "compass/css3/font-face";
+
+@include font-face("C64 User", font-files("/font/C64_User_v1.0-STYLE.woff", "C64_User_v1.0-STYLE.ttf"), "/font/C64_User_v1.0-STYLE.eot");
+@import "compass/reset";
 @import "_jquery.terminal.scss";
 
-html,
-body,
-#term {
-  background: #000;
-  height: 100%;
+.wrap {
+  font-family: "C64 User", sans;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 16px;
+  padding-top: 40px;
+
+  img.logo {
+    margin: 10px 0 20px 0;
+  }
+
 }
+
+#term {
+  padding: 10px;
+  background: #0092db;
+  //  font-family: "C64 User", sans;
+  //  font-size: 10px;
+  color: #fff;
+  min-height: 300px;
+
+  a {
+    color: #fff;
+  }
+
+  .cursor {
+    background: #fff;
+    width: 10px;
+
+    &.inverted {
+      background: transparent;
+    }
+
+  }
+
+}
+

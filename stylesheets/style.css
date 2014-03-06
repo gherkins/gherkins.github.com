@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "C64 User";
+  src: url(/font/C64_User_v1.0-STYLE.eot);
+  src: url(/font/C64_User_v1.0-STYLE.eot?#iefix) format('eot'), url(/font/C64_User_v1.0-STYLE.woff) format('woff'), url('/stylesheets/fonts/C64_User_v1.0-STYLE.ttf') format('truetype');
+}
+
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * This css file is part of jquery terminal
+ *
+ * Licensed under GNU LGPL Version 3 license
+ * Copyright (c) 2011-2013 Jakub Jankiewicz <http://jcubic.pl>
+ *
+ */
+/* line 10, ../sass/_jquery.terminal.scss */
+.terminal .terminal-output .format, .terminal .cmd .format,
+.terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div {
+  display: inline-block;
+}
+
+/* line 14, ../sass/_jquery.terminal.scss */
+.terminal .clipboard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=1);
+  opacity: 0.01;
+  width: 2px;
+}
+
+/* line 22, ../sass/_jquery.terminal.scss */
+.cmd > .clipboard {
+  position: fixed;
+}
+
+/* line 26, ../sass/_jquery.terminal.scss */
+.terminal {
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 32, ../sass/_jquery.terminal.scss */
+.terminal .terminal-output div div, .terminal .prompt {
+  display: block;
+  height: auto;
+}
+
+/* line 37, ../sass/_jquery.terminal.scss */
+.terminal .prompt {
+  float: left;
+}
+
+/* line 41, ../sass/_jquery.terminal.scss */
+.terminal {
+  font-family: inherit;
+}
+
+/* line 45, ../sass/_jquery.terminal.scss */
+.terminal-output > div {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 50, ../sass/_jquery.terminal.scss */
+.terminal .cmd span {
+  float: left;
+}
+
+/* line 75, ../sass/_jquery.terminal.scss */
+.clear {
+  clear: both;
+}
+
+/* line 8, ../sass/style.scss */
+.wrap {
+  font-family: "C64 User", sans;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 16px;
+  padding-top: 40px;
+}
+/* line 16, ../sass/style.scss */
+.wrap img.logo {
+  margin: 10px 0 20px 0;
+}
+
+/* line 22, ../sass/style.scss */
+#term {
+  padding: 10px;
+  background: #0092db;
+  color: #fff;
+  min-height: 300px;
+}
+/* line 30, ../sass/style.scss */
+#term a {
+  color: #fff;
+}
+/* line 34, ../sass/style.scss */
+#term .cursor {
+  background: #fff;
+  width: 10px;
+}
+/* line 38, ../sass/style.scss */
+#term .cursor.inverted {
+  background: transparent;
+}
