@@ -80,7 +80,7 @@ $(function () {
                         term.echo();
                     }
                     else {
-                        term.echo(command + ": command not found");
+                        term.echo("\n?syntax error\n");
                     }
                     break;
 
@@ -96,7 +96,7 @@ $(function () {
             greetings: greetings(),
             tabcompletion: true,
             completion: function (terminal, string, callback) {
-                callback(['email', 'github', 'blog', 'twitter', 'cv', 'recentwork', 'clear']);
+                callback(['email', 'github', 'blog', 'twitter', 'cv', 'recentwork', 'clear', 'run']);
             }
         });
 });
