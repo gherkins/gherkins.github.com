@@ -37,6 +37,21 @@ $(function () {
                     term.echo("https://twitter.com/mgherkins");
                     break;
 
+                case 'run':
+                    term.clear();
+                    var interval = 10;
+                    for (var i = 0; i <= 16; i++) {
+                        setTimeout(function(){
+                            term.echo('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+                        }, interval);
+                        interval += 200;
+                    }
+                    setTimeout(function(){
+                        term.clear();
+                        term.echo(greetings());
+                    }, 10000);
+                    break;
+
                 case 'cv':
                     term.echo("http://careers.stackoverflow.com/gherkins");
                     break;
