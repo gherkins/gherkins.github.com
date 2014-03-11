@@ -5,7 +5,7 @@ function greetings() {
 $(function () {
 
 
-    $('#term').terminal(
+    $('#term').html('').terminal(
 
         function (command, term) {
 
