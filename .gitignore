@@ -1,7 +1,6 @@
 /.idea/
 /.DS_Store
 /sass/.sass-cache/
-
 /.sass-cache/
-
 /vcards/.idea/
+.DS_Store
