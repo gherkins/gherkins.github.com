@@ -59,10 +59,9 @@ $(function () {
                 case 'recentwork':
                     $.each(
                         {
-                            "10/2013": "http://weihnachtskarten-designer.net/",
-                            "07/2013": "http://eco-weihnachtskarten.de",
+                            "10/2014": "http://eco-weihnachtskarten.de",
                             "04/2013": "http://web-development.cc/mpc-chordfinder/",
-                            "01/2013": "http://mashcloud.net/",
+                            "01/2013": "http://mashcloud.herokuapp.com/",
                             "03/2012": "http://web-development.cc/guitar-interval-trainer/"
                         }
                         , function (date, link) {
