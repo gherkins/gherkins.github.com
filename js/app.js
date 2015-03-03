@@ -1,5 +1,5 @@
 function greetings() {
-    return "commands: recentwork, cv, email, github, blog, twitter\n\nready\n";
+    return "commands: cv, email, github, twitter\n\nready\n";
 }
 
 $(function () {
@@ -29,10 +29,6 @@ $(function () {
                     term.echo("https://github.com/gherkins");
                     break;
 
-                case 'blog':
-                    term.echo("http://nerdpress.org/author/max-girkens/");
-                    break;
-
                 case 'twitter':
                     term.echo("https://twitter.com/mgherkins");
                     break;
@@ -54,19 +50,6 @@ $(function () {
 
                 case 'cv':
                     term.echo("http://careers.stackoverflow.com/gherkins");
-                    break;
-
-                case 'recentwork':
-                    $.each(
-                        {
-                            "10/2014": "http://eco-weihnachtskarten.de",
-                            "04/2013": "http://web-development.cc/mpc-chordfinder/",
-                            "01/2013": "http://mashcloud.herokuapp.com/",
-                            "03/2012": "http://web-development.cc/guitar-interval-trainer/"
-                        }
-                        , function (date, link) {
-                            term.echo(date + ": " + link);
-                        });
                     break;
 
                 case 'clear':
@@ -95,7 +78,7 @@ $(function () {
             greetings: greetings(),
             tabcompletion: true,
             completion: function (terminal, string, callback) {
-                callback(['email', 'github', 'blog', 'twitter', 'cv', 'recentwork', 'clear', 'run']);
+                callback(['email', 'github', 'twitter', 'cv', 'clear', 'run']);
             }
         });
 });
