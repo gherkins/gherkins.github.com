@@ -49,7 +49,7 @@ $(function () {
                     break;
 
                 case 'cv':
-                    term.echo("http://careers.stackoverflow.com/gherkins");
+                    term.echo("http://stackoverflow.com/cv/max-girkens");
                     break;
 
                 case 'clear':
