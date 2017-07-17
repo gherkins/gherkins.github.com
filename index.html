@@ -15,19 +15,24 @@
         }
 
         body {
-            background: url(https://68.media.tumblr.com/tumblr_lgeuwh4rzv1qghjrdo1_500.gif) no-repeat center center fixed;
+            background: url(https://68.media.tumblr.com/tumblr_lgeuwh4rzv1qghjrdo1_500.gif) no-repeat right center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
 
-        .row {
+        .container {
+            text-align: center;
             min-height: 100%; /* Fallback for browsers do NOT support vh unit */
             min-height: 100vh; /* These two lines are counted as one :-)       */
 
             display: flex;
             align-items: center;
+        }
+
+        .well {
+            display: inline-block;
         }
 
         h1 {
@@ -44,31 +49,22 @@
 <body>
 
 <div class="container">
-    <div class="row">
+    <div class="well">
 
-        <div class="col-xs-12 col-sm-6 col-sm-offset-2 col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
-            <div class="well vertical-center">
+        <h1>
+            Max Girkens
+        </h1>
+        <h2>
+            web development
+        </h2>
 
-                <h1>
-                    Max Girkens
-                </h1>
-                <h2>
-                    web development
-                </h2>
+        <a href="https://github.com/gherkins" class="btn btn-default">
+            <i class="fa fa-github"></i> github
+        </a>
 
-                <a href="https://github.com/gherkins" class="btn btn-default">
-                    <i class="fa fa-github"></i> github
-                </a>
-
-                <a href="http://stackoverflow.com/users/1468708/mx-gherkins" class="btn btn-default">
-                    <i class="fa fa-stack-overflow"></i> stackoverflow
-                </a>
-
-            </div>
-
-
-        </div>
-
+        <a href="http://stackoverflow.com/users/1468708/mx-gherkins" class="btn btn-default">
+            <i class="fa fa-stack-overflow"></i> stackoverflow
+        </a>
 
     </div>
 </div>
