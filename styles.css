@@ -1,0 +1,117 @@
+html, body, .container, .row {
+    height: 100% !important;
+}
+
+body {
+    background: url('kettcar.gif') no-repeat right center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Novecento', sans-serif;
+}
+
+.container {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.card {
+    border-radius: 500px 0 0 500px;
+    background: #263238;
+    height: 136px;
+    width: 320px;
+    box-shadow: -10px 10px 10px -10px rgba(119,119,119,1);
+
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+}
+
+li,
+li a {
+    display: block;
+    height: 34px;
+    width: 34px;
+}
+
+i {
+    font-size: 1.6em !important;
+    display: block;
+    height: 34px;
+    width: 34px;
+    line-height: 34px !important;
+    text-align: center !important;
+}
+
+li:nth-child(1) {
+    background: #777777;
+}
+
+li:nth-child(2) {
+    background: #0092db;
+}
+
+li:nth-child(3) {
+    background: #7C7C7C;
+}
+
+li:nth-child(4) {
+    background: #929292;
+}
+
+li:hover{
+    background: transparent;
+}
+
+i {
+    color: #fff;
+}
+
+.logo {
+    display: inline-block;
+    width: 100%;
+}
+
+img {
+    opacity: 0.5;
+    margin-top: 50%;
+    margin-left: 14px;
+}
+
+.content {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-top: 20px;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 0;
+    opacity: 0.5;
+    text-align: right;
+}
