@@ -11,25 +11,13 @@ body {
     font-family: 'Novecento', sans-serif;
 }
 
-.container {
-    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-}
-
-@media (min-width: 768px) {
-    .container {
-        display: flex;
-        align-items: center;
-    }
-}
-
 .card {
     border-radius: 500px 0 0 500px;
     background: #263238;
     height: 136px;
     width: 320px;
-    box-shadow: -10px 10px 10px -10px rgba(119,119,119,1);
-
+    box-shadow: -10px 10px 10px -10px rgba(119, 119, 119, 1);
+    margin-top: 20%;
 }
 
 ul {
@@ -71,7 +59,7 @@ li:nth-child(4) {
     background: #929292;
 }
 
-li:hover{
+li:hover {
     background: transparent;
 }
 
@@ -93,12 +81,6 @@ img {
 .content {
     text-transform: uppercase;
     color: #fff;
-}
-
-@media (max-width: 767px) {
-    .card {
-        margin-top: 20px;
-    }
 }
 
 h1 {
