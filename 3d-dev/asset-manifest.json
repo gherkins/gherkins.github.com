@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.fadaf054.css",
-    "main.js": "./static/js/main.860da466.js",
+    "main.js": "./static/js/main.7eff7aae.js",
     "static/media/ssw-16.glb": "./static/media/ssw-16.fa515d6f2f204e842556.glb",
     "static/media/ssw-17.glb": "./static/media/ssw-17.fa515d6f2f204e842556.glb",
     "static/media/ssw-18.glb": "./static/media/ssw-18.fa515d6f2f204e842556.glb",
@@ -10,6 +10,6 @@
   },
   "entrypoints": [
     "static/css/main.fadaf054.css",
-    "static/js/main.860da466.js"
+    "static/js/main.7eff7aae.js"
   ]
 }
