@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f473b72d.css",
+    "main.js": "./static/js/main.d18016fa.js",
+    "static/media/Fetus_Week_16_Diffuse.png": "./static/media/Fetus_Week_16_Diffuse.61d2188dd758e270f17b.png",
+    "static/media/Fetus_Week_16_Normals.png": "./static/media/Fetus_Week_16_Normals.afb238df1c6798421c87.png",
+    "static/media/Uterus_Inside_Diffuse_hell.png": "./static/media/Uterus_Inside_Diffuse_hell.0390be00f41c33beec6c.png",
+    "static/media/Fetus_Week_16.obj": "./static/media/Fetus_Week_16.a6c043de219a96257a17.obj",
+    "index.html": "./index.html"
+  },
+  "entrypoints": [
+    "static/css/main.f473b72d.css",
+    "static/js/main.d18016fa.js"
+  ]
+}
